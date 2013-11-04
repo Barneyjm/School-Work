@@ -1,0 +1,49 @@
+<!-- header -->
+	<header id="mast">
+    	<h1>Blah blah blah, you suck. </h1> <!-- DON'T MAKE CHANGES TO THIS ORIGINAL COPY OF THE TEMPLATE. COPY THE FILE, RENAME IT, THEN MAKE CHANGES! -->
+    </header>
+    <nav id="global">
+    	<ul>
+        	<li><a href="index.html">Home</a></li>
+            <li><a class="selected" href="research.html">Research</a></li> <!-- move the 'class' tag around to the correct link -->
+            <li><a  href="people.html">People</a></li>
+            <li><a href="links.html">Links</a></li>
+			<li><a href="calendar.html">Calendar</a></li>
+        </ul>
+    </nav>
+	<!-- end of header -->
+
+
+
+<!-- footer -->
+    <footer> <!-- THE FOOTER IS SOMETHING CONSTANT THROUGHOUT THE WEBSITE: MAKE A CHANGE ON ONE, DO IT TO THE REST, TOO -->
+    	<div class="clear">
+            <section id="about">
+                <header>
+                    <h3>About</h3>
+                </header>
+                <p>This is where the stuff goes! </p>
+            </section>
+			
+			<section>				
+            		 <img src="images/logo-NSF-CMYK.GIF" width="140" height="140" alt="National Science Foundation" border="0">
+            </section>
+			<section>
+					 <img src="images/seal01002.jpg" width="140" height="140" alt="James Madison University" border="0">
+			</section>
+            <section>
+                
+            </section>
+        </div>
+		<div width="500">
+			 <section id="siteMap" >
+			 <header>
+                    <h3>Site Map</h3>
+             </header>
+                <nav id="siteMap">
+                        <p><a href="index.html">Home</a> | <a href="research.html">Research</a> | <a href="people.html">People</a> | <a href="links.html">Links</a> | <a href="calendar.html">Calendar</a>
+                </nav>
+			</section>
+		</div>
+    </footer>
+	<!-- end of footer -->

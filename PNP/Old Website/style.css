@@ -1,0 +1,63 @@
+<style type="text/css">
+
+head {
+}
+
+#banner {
+position: absolute;
+height: 20%;
+left: 2%;
+right: 2%;
+background: gray;
+text-align: center;
+color: black;
+font-family: "monospace", courier new;
+}
+
+#navigation {
+height: 10%;
+background: yellow;
+}
+
+body {	
+}
+
+h1 {
+	margin-left:40pt;
+	margin-right:40pt;
+	font: 24pt Courier New;
+	font-style: normal;
+	font-weight: bold;
+	line-height:24pt;
+}
+
+h2{
+	font:18pt Courier New;
+	font-style: normal;
+	font-weight: bold;
+	line-height:18pt;
+	margin-left:40pt;
+	margin-right:40pt;
+}
+
+h3 {
+	font: 18pt Courier New;
+	font-style: normal;
+	font-weight: bold;
+	line-height:18pt;
+}
+
+h5 {
+	font: 9pt Arial;
+	font-style: normal;
+	font-weight: bold;
+	line-height:9pt;
+}
+
+a { text-decoration: none; color: black; }
+a:link { text-decoration: underline; color: blue; }
+a:visited {text-decoration: underline; color: blue; }
+a:active {color: purple; }
+a:hover {text-decoration: bold}
+
+</style>

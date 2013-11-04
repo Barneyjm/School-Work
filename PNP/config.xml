@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<juiceboxgallery 
+
+	galleryTitle="Dr. Giovanetti photos"
+	indexPageName="index1.html"
+
+>
+  <image imageURL="images/blackBox.jpg"
+	thumbURL="thumbs/blackBox.jpg"
+	linkURL="images/blackBox.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\blackBox.jpg">
+    <title><![CDATA[blackBox]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/clas12.jpg"
+	thumbURL="thumbs/clas12.jpg"
+	linkURL="images/clas12.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\clas12.jpg">
+    <title><![CDATA[clas12]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/detectorMulan.jpg"
+	thumbURL="thumbs/detectorMulan.jpg"
+	linkURL="images/detectorMulan.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\detectorMulan.jpg">
+    <title><![CDATA[detectorMulan]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/mulanSetup.gif"
+	thumbURL="thumbs/mulanSetup.jpg"
+	linkURL="images/mulanSetup.gif"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\mulanSetup.gif">
+    <title><![CDATA[mulanSetup]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/mulanTeam.jpg"
+	thumbURL="thumbs/mulanTeam.jpg"
+	linkURL="images/mulanTeam.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\mulanTeam.jpg">
+    <title><![CDATA[mulanTeam]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/PSIstudents.jpg"
+	thumbURL="thumbs/PSIstudents.jpg"
+	linkURL="images/PSIstudents.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\PSIstudents.jpg">
+    <title><![CDATA[PSIstudents]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/studentsAtWork.jpg"
+	thumbURL="thumbs/studentsAtWork.jpg"
+	linkURL="images/studentsAtWork.jpg"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\studentsAtWork.jpg">
+    <title><![CDATA[studentsAtWork]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+  <image imageURL="images/wireCut.gif"
+	thumbURL="thumbs/wireCut.jpg"
+	linkURL="images/wireCut.gif"
+	linkTarget="_blank"
+	sourcePath="C:\Users\James Barney\Desktop\PNP\images\wireCut.gif">
+    <title><![CDATA[wireCut]]></title>
+    <caption><![CDATA[]]></caption>
+  </image>
+</juiceboxgallery>

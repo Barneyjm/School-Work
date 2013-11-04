@@ -1,0 +1,327 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="stepper_start_files/filelist.xml">
+<link rel=Edit-Time-Data href="stepper_start_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Development of stepper motor controls using labview</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>giovankl</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>phyreskg</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2007-07-10T20:01:00Z</o:Created>
+  <o:LastSaved>2007-07-10T20:01:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>311</o:Words>
+  <o:Characters>1774</o:Characters>
+  <o:Company>James Madison University</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2081</o:CharactersWithSpaces>
+  <o:Version>10.6735</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1357197491;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1822638344 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal>Development of stepper motor controls using <span
+class=SpellE>labview</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'><span
+     class=SpellE>Thorlab</span>- T25xyz servo motor</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'><span
+style='mso-spacerun:yes'>     </span><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" alt="T25XYZ - 3-Axis Compact Motorized 1 inch Travel Translation Stage"
+ style='width:225pt;height:225pt'>
+ <v:imagedata src="stepper_start_files/image001.jpg" o:href="http://www.thorlabs.com/images/large/6687-lrg.jpg"/>
+</v:shape><![endif]--><![if !vml]><img width=300 height=300
+src="stepper_start_files/image001.jpg"
+alt="T25XYZ - 3-Axis Compact Motorized 1 inch Travel Translation Stage" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.25in'>http://www.thorlabs.com/thorProduct.cfm?partNumber=T25XYZ<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'>The
+     first step was to take the controllers, the power supply and a USB hub,
+     and put them together so that there weren’t wires going every which way.
+     So I did the simplest thing I could imagine and attached it all to a piece
+     of plywood and twist-tie the wires together in a neat manner.</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:5in;height:270pt'>
+ <v:imagedata src="stepper_start_files/image002.jpg" o:title="PICT0004"/>
+</v:shape><![endif]--><![if !vml]><img width=480 height=360
+src="stepper_start_files/image003.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'>We
+     first tested the motors using the APT User program. Initially we had to
+     configure the motors using the APT configuration utility, but this proved
+     easy, as we only had to tell it which controllers were controlling what
+     kind of motor.</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:387pt;height:239.25pt'>
+ <v:imagedata src="stepper_start_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=516 height=319
+src="stepper_start_files/image005.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>(The only server setting remains
+[dwell 5000] as recommended. Not set up any simulators.)</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>With a few test we ascertained
+that all motors move and show their position. The T25xyz does have an encoder
+but no limit switches.<span style='mso-spacerun:yes'>  </span>Home therefore
+simply resets the position at the current location to 0000.</p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><b style='mso-bidi-font-weight:normal'>Labview</b></span><b
+style='mso-bidi-font-weight:normal'> control<o:p></o:p></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><o:p>&nbsp;</o:p></b></p>
+
+<p class=MsoNormal>The devices come with <span class=SpellE>Labview</span>
+drivers.<span style='mso-spacerun:yes'>  </span>The drivers communicate with
+the motors using <span class=SpellE>activeX</span>. So <span class=SpellE>labview</span>
+follows the <span class=SpellE>activeX</span> method to send commands and
+retrieve status. To make the system work we started <span class=SpellE>Labview</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'>Blank
+     VI</li>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'>Modern</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l0 level2 lfo1;tab-stops:list 1.0in'>Container</li>
+  <ul style='margin-top:0in' type=square>
+   <li class=MsoNormal style='mso-list:l0 level3 lfo1;tab-stops:list 1.5in'>Active
+       X container (drop this on the Front Panel)</li>
+   <li class=MsoNormal style='mso-list:l0 level3 lfo1;tab-stops:list 1.5in'>Right
+       click</li>
+   <li class=MsoNormal style='mso-list:l0 level3 lfo1;tab-stops:list 1.5in'>Insert
+       active x object</li>
+   <ul style='margin-top:0in' type=disc>
+    <li class=MsoNormal style='mso-list:l0 level4 lfo1;tab-stops:list 2.0in'>MG
+        motor control</li>
+   </ul>
+  </ul>
+ </ul>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The standard panel for the motor appears on the front panel
+and a VI appears on the block diagram.<span style='mso-spacerun:yes'> 
+</span>The serial number has to be added to the block diagram VI using the
+(right click-Create property for ….).</p>
+
+<p class=MsoNormal>Once you have the VI set you can imbed the VI in a loop </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1028" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:8.4pt;width:203.5pt;
+ height:186pt;z-index:2;mso-position-horizontal:left'>
+ <v:imagedata src="stepper_start_files/image006.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=271 height=248
+src="stepper_start_files/image007.jpg" align=left hspace=12 v:shapes="_x0000_s1028"><![endif]></p>
+
+<p class=MsoNormal>The front panel is shown to the right and the block diagram
+is provided below.<span style='mso-spacerun:yes'>  </span>Once the <span
+class=SpellE>Labview</span> program is started the <span class=SpellE>activeX</span>
+buttons can be used to control the motor. In addition, more functions can be
+added to the sequence as MG17Motor blocks only with different functions and
+different inputs and outputs. The functions can be selected using the right
+click and select method.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1027" type="#_x0000_t75"
+ style='position:absolute;margin-left:0;margin-top:42pt;width:399pt;height:117pt;
+ z-index:1;mso-position-horizontal:left' o:allowoverlap="f">
+ <v:imagedata src="stepper_start_files/image008.png" o:title=""/>
+ <w:wrap type="square"/>
+</v:shape><![endif]--><![if !vml]><img width=532 height=156
+src="stepper_start_files/image009.jpg" align=left hspace=12 v:shapes="_x0000_s1027"><![endif]></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
