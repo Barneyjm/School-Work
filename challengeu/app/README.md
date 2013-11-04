@@ -1,4 +1,6 @@
-# Intro to Flask
+# Challenge U - Web app based off of Flask's tutorial for getting started.
+
+"
 
 This is a sample application for the Intro to Flask series on Nettuts+.
 
@@ -34,3 +36,5 @@ $ git checkout -b 05_contact_form
 Alternatively, you can use GitHub's web interface to view each checkpoint. Click on the branch menu and select the checkpoint you want to view, shown below:
 
 ![GitHub Branch Menu](https://raw.github.com/cuttarug/intro-to-flask/master/static/img/branch-menu.png)
+
+"
