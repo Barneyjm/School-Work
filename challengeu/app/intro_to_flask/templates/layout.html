@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge U</title>    
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"></strong>
+  </head>
+  <body>
+   
+    <header>
+      <div class="container">
+        <h1 class="logo">challenge u</h1>
+	<strong><nav>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">home</a></li>
+	<li><a href="{{ url_for('profile') }}">profile</a></li>
+        <li><a href="{{ url_for('challenges') }}">challenges</a></li>
+	<li><a href="{{ url_for('register') }}">register</a></li>
+	<li><a href="{{ url_for('signin') }}">sign in</a></li>
+	<li><a href="{{ url_for('signout') }}">sign out</a></li>
+      </ul>
+    </nav></strong>
+      </div>
+    </header> 
+     
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+     
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+  <h2>sign in</h2>
+ 
+  {% for message in form.screenname.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.password.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  <form action="{{ url_for('signin') }}" method=post>
+    {{ form.hidden_tag() }}
+     
+    {{ form.screenname.label }}
+    {{ form.screenname }}
+     
+    {{ form.password.label }}
+    {{ form.password }}
+     
+    {{ form.submit }}
+  </form>
+     
+{% endblock %}
