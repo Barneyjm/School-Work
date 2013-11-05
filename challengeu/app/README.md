@@ -1,4 +1,6 @@
-# Challenge U - Web app based off of Flask's tutorial for getting started.
+# Challenge U - Web app 
+
+using Flask's tutorial for getting started.
 
 "
 
