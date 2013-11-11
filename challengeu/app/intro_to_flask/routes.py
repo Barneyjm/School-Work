@@ -11,7 +11,7 @@ def home():
     
 @app.route('/hello_world')
 def hello_world():
-    print "Hello World!"
+    return "Hello World!"
 
 @app.route('/challenges')
 def challenges():
