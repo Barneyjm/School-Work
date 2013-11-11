@@ -11,7 +11,7 @@ import datetime
 def home():
     return render_template('home.html')
     
-@app.route('/hello_world')
+@app.route('/hello_world', method=['GET', 'POST'])
 def hello_world():
     return "Hello World!"
 
