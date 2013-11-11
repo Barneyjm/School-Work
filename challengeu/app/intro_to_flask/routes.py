@@ -5,6 +5,8 @@ from forms import RegisterForm, SigninForm
 
 import datetime
 
+#change 'render_template' to 'send_file'.... angular would interpret the 'render_template' as a jinja2 template.
+
 @app.route('/')
 def home():
     return render_template('home.html')
