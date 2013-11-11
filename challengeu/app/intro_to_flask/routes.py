@@ -8,6 +8,10 @@ import datetime
 @app.route('/')
 def home():
     return render_template('home.html')
+    
+@app.route('/hello_world')
+def hello_world():
+    print "Hello World!"
 
 @app.route('/challenges')
 def challenges():
